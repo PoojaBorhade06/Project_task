@@ -1,0 +1,23 @@
+{% extends 'App1/base.html' %}
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Title</title>
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+<p>This is about us page</p>
+
+<a href="{% url 'changepassword' %}">
+    <button class="btn btn-success">change password</button>
+</a>
+
+
+{% endblock %}
+</body>
+</html>

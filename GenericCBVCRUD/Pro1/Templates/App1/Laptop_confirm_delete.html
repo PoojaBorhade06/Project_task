@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LaptopCBV project</title>
+</head>
+<body>
+<form method="post">
+  {% csrf_token %}
+    <p>Are you sure to delete this record "{{object}}"</p>
+  <input type="submit" value="Confirm">
+
+</form>
+
+</body>
+</html>

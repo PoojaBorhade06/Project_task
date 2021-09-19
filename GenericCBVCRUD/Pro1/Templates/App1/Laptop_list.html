@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laptop_List</title>
+</head>
+<body>
+<table border="1px;">
+    <tr>
+        <th>ID</th>
+         <th>LaptopName</th>
+         <th>Company</th>
+         <th>BatchNo</th>
+         <th>RAM</th>
+         <th>ROM</th>
+         <th>Weight</th>
+         <th>Processor</th>
+    </tr>
+    {% for lap in object_list %}
+<tr>
+    <td>{{lap.id}}</td>
+    <td>{{lap.lap_name}}</td>
+    <td>{{lap.company}}</td>
+    <td>{{lap.batchno}}</td>
+    <td>{{lap.ram}}</td>
+    <td>{{lap.rom}}</td>
+     <td>{{lap.weight}}</td>
+    <td>{{lap.processor}}</td>
+</tr>
+    {% endfor %}
+</table>
+</body>
+</html>
